@@ -1,10 +1,3 @@
 #!/usr/bin/env bash
 
-# 启用alias扩展功能
-shopt -s expand_aliases
-
-dart format -l 100 $@
-
-
-# 禁用alias扩展功能
-shopt -u expand_aliases
+fvm dart format -l 100 $@
